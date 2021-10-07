@@ -17,9 +17,9 @@
         </form>
         <ul class="user-nav user-nav-header">
           <li class="user-nav-item user-nav-item-account user-nav-item-out">
-            <a class="user-account-button" href="#">Войти</a>
+            <a class="user-nav-button-in" href="#">Войти</a>
           </li>
-          <li class="user-nav-item user-nav-item-match">
+          <li class="user-nav-item user-nav-item-comparison">
             <a href="#">Сравнить</a>
           </li>
           <li class="user-nav-item user-nav-item-cart">
@@ -27,7 +27,7 @@
           </li>
         </ul>
         <ul class="site-nav">
-          <li class="site-nav-item site-nav-item-products">
+          <li class="site-nav-item site-nav-item-sections">
             <a href="#">Каталог товаров</a>
             <ul class="site-nav-sub-menu">
               <li class="site-nav-sub-menu-item">
@@ -124,49 +124,49 @@
           </div>
         </div>
       </section>
-      <section class="products">
-        <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul class="product-list">
-          <li class="product-item">
-            <a class="product-link" href="#">
-              <span class="product-icon"></span>
-              <span class="product-name">Виртуальная реальность</span>
+      <section class="sections">
+        <h2 class="visually-hidden">Разделы каталога</h2>
+        <ul class="section-list">
+          <li class="section-item">
+            <a class="section-link" href="#">
+              <span class="section-icon"></span>
+              <span class="section-name">Виртуальная реальность</span>
             </a>
           </li>
-          <li class="products-item">
-            <a class="product-link" href="catalog.html">
-              <span class="product-icon"></span>
-              <span class="product-name">Моноподы для селфи</span>
+          <li class="section-item">
+            <a class="section-link" href="catalog.html">
+              <span class="section-icon"></span>
+              <span class="section-name">Моноподы для селфи</span>
             </a>
           </li>
-          <li class="products-item">
-            <a class="product-link" href="#">
-              <span class="product-icon"></span>
-              <span class="product-name">Экшн-камеры</span>
+          <li class="section-item">
+            <a class="section-link" href="#">
+              <span class="section-icon"></span>
+              <span class="section-name">Экшн-камеры</span>
             </a>
           </li>
-          <li class="products-item">
-            <a class="product-link" href="#">
-              <span class="product-icon"></span>
-              <span class="product-name">Фитнес-браслеты</span>
+          <li class="section-item">
+            <a class="section-link" href="#">
+              <span class="section-icon"></span>
+              <span class="section-name">Фитнес-браслеты</span>
             </a>
           </li>
-          <li class="products-item">
-            <a class="product-link" href="#">
-              <span class="product-icon"></span>
-              <span class="product-name">Умные часы</span>
+          <li class="section-item">
+            <a class="section-link" href="#">
+              <span class="section-icon"></span>
+              <span class="section-name">Умные часы</span>
             </a>
           </li>
-          <li class="products-item">
-            <a class="product-link" href="#">
-              <span class="product-icon"></span>
-              <span class="product-name">Квадрокоптеры</span>
+          <li class="section-item">
+            <a class="section-link" href="#">
+              <span class="section-icon"></span>
+              <span class="section-name">Квадрокоптеры</span>
             </a>
           </li>
         </ul>
       </section>
       <section class="services">
-        <h2 class="viaually-hidden">Услуги</h2>
+        <h2 class="visually-hidden">Услуги</h2>
         <div class="services-slider">
           <div class="services-toggles">
             <button class="services-toggle services-toggle-active button" type="button">Доставка</button>
@@ -243,14 +243,14 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-header-logo">
+      <a class="page-footer-logo">
         <img src="img/device-logo-yellow.svg" width="163" height="35" alt="Логотип Интернет-магазина &laquo;Device&raquo;">
       </a>
       <ul class="user-nav user-nav-footer">
         <li class="user-nav-item user-nav-item-account user-nav-item-out">
           <a class="user-account-button" href="#">Войти</a>
         </li>
-        <li class="user-nav-item user-nav-item-match">
+        <li class="user-nav-item user-nav-item-comparison">
           <a href="#">Сравнить</a>
         </li>
         <li class="user-nav-item user-nav-item-cart">
@@ -293,5 +293,29 @@
         <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Логотип сайта &laquo;HTML academy&raquo;">
       </a>
     </footer>
+    <section class="map-modal modal">
+      <h2 class="visually-hidden">Карта</h2>
+      <button class="map-close" type="button" aria-label="Закрыть"></button>
+      <img src="img/map.png" width="960" height="573" alt="Карта">
+    </section>
+    <section class="feedback-modal modal">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <button class="feedback-close" type="button" aria-label="Закрыть"></button>
+      <form class="feedback-form" method="POST" action="https://echo.htmlacademy.ru/" target="_blank">
+        <p class="feedback-item feedback-item-name">
+          <label for="feedback-name">Ваше имя:</label>
+          <input class="user-name" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback-item feedback-item-email">
+          <label for="feedback-email">Ваш email:</label>
+          <input class="user-email" type="email" name="email" id="feedback-email" placeholder="email@example.com">
+        </p>
+        <p class="feedback-item feedback-item-text">
+          <label for="feedback-email-text">Текст письма:</label>
+          <textarea class="user-email-text" name="email-text" id="feedback-email-text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="feedback-submit button" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
