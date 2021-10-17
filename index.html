@@ -9,16 +9,16 @@
   <body class="page-body">
     <div class="wrapper">
       <header class="page-header">
-        <a class="page-header-logo">
+        <a class="page-header-logo logo">
           <img src="img/device-logo-black.svg" width="163" height="35" alt="Логотип Интернет-магазина &laquo;Device&raquo;">
         </a>
-        <nav class="page-neader-nav">
+        <nav class="page-header-nav">
           <form class="site-search" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
             <input class="site-search-input" type="search" name="search" placeholder="Поиск по сайту">
-            <button class="site-search-button" type="submit" aria-label="Поиск по сайту"></button>
+            <button class="site-search-button" type="submit">Найти</button>
           </form>
           <ul class="user-nav user-nav-header">
-            <li class="user-nav-item user-nav-item-out">
+            <li class="user-nav-item user-nav-item-account user-nav-item-out">
               <a class="user-nav-link user-nav-link-in" href="#">Войти</a>
             </li>
             <li class="user-nav-item">
@@ -29,28 +29,30 @@
             </li>
           </ul>
           <ul class="site-nav site-nav-header">
-            <li class="site-nav-item site-nav-item-sections">
-              <a href="#">Каталог товаров</a>
-              <ul class="site-nav-sub-menu">
-                <li class="site-nav-sub-menu-item">
-                  <a href="#">Виртуальная реальность</a>
-                </li>
-                <li class="site-nav-sub-menu-item">
-                  <a href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="site-nav-sub-menu-item">
-                  <a href="#">Квадрокоптер</a>
-                </li>
-                <li class="site-nav-sub-menu-item">
-                  <a href="catalog.html">Моноподы для селфи</a>
-                </li>
-                <li class="site-nav-sub-menu-item">
-                  <a href="#">Умные часы</a>
-                </li>
-                <li class="site-nav-sub-menu-item">
-                  <a href="#">Экшн-камеры</a>
-                </li>
-              </ul>
+            <li class="site-nav-item site-nav-item-catalog">
+              <a class="site-nav-link-catalog" href="#">Каталог товаров</a>
+              <div class="sub-menu-container">
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Квадрокоптер</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="catalog.html">Моноподы для селфи</a>
+                  </li>
+                  <li class="sub-menu-item sub-menu-item-watch">
+                    <a href="#">Умные часы</a>
+                  </li>
+                  <li class="sub-menu-item sub-menu-item-camera">
+                    <a href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="site-nav-item">
               <a href="#">Доставка</a>
@@ -257,7 +259,7 @@
     </main>
     <footer class="page-footer">
       <div class="wrapper">
-        <a class="page-footer-logo">
+        <a class="page-footer-logo logo">
           <img src="img/device-logo-yellow.svg" width="163" height="35" alt="Логотип Интернет-магазина &laquo;Device&raquo;">
         </a>
         <ul class="user-nav user-nav-footer">

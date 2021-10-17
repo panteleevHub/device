@@ -8,17 +8,17 @@
   </head>
   <body class="page-body">
     <div class="wrapper">
-      <header class="page-header">
-        <a class="page-header-logo" href="index.html" aria-label="На главную">
+      <header class="page-header page-header-catalog">
+        <a class="page-header-logo logo" href="index.html" aria-label="На главную">
           <img src="img/device-logo-black.svg" width="163" height="35" alt="Логотип Интернет-магазина &laquo;Device&raquo;">
         </a>
-        <nav class="page-neader-nav">
+        <nav class="page-header-nav">
           <form class="site-search" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
             <input class="site-search-input" type="search" name="search" placeholder="Поиск по сайту">
-            <button class="site-search-button" type="submit" aria-label="Поиск по сайту"></button>
+            <button class="site-search-button" type="submit">Найти</button>
           </form>
           <ul class="user-nav user-nav-header">
-            <li class="user-nav-item user-nav-item-in">
+            <li class="user-nav-item user-nav-item-account user-nav-item-in">
               <a class="user-nav-link user-nav-link-person" href="#">Валентин Петухов</a>
               <a class="user-nav-link user-nav-link-out" href="#">Выйти</a>
             </li>
@@ -30,28 +30,30 @@
             </li>
           </ul>
           <ul class="site-nav site-nav-header">
-            <li class="site-nav-item site-nav-item-sections">
-              <a href="#">Каталог товаров</a>
-              <ul class="site-nav-sub-menu">
-                <li class="site-nav-sub-menu-item">
-                  <a href="#">Виртуальная реальность</a>
-                </li>
-                <li class="site-nav-sub-menu-item">
-                  <a href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="site-nav-sub-menu-item">
-                  <a href="#">Квадрокоптер</a>
-                </li>
-                <li class="site-nav-sub-menu-item">
-                  <a>Моноподы для селфи</a>
-                </li>
-                <li class="site-nav-sub-menu-item">
-                  <a href="#">Умные часы</a>
-                </li>
-                <li class="site-nav-sub-menu-item">
-                  <a href="#">Экшн-камеры</a>
-                </li>
-              </ul>
+            <li class="site-nav-item site-nav-item-catalog">
+              <a class="site-nav-link-catalog" href="#">Каталог товаров</a>
+              <div class="sub-menu-container">
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Квадрокоптер</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a>Моноподы для селфи</a>
+                  </li>
+                  <li class="sub-menu-item sub-menu-item-watch">
+                    <a href="#">Умные часы</a>
+                  </li>
+                  <li class="sub-menu-item sub-menu-item-camera">
+                    <a href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="site-nav-item">
               <a href="#">Доставка</a>
@@ -66,7 +68,7 @@
         </nav>
       </header>
     </div>
-    <main>
+    <main class="catalog">
       <div class="wrapper">
         <h1 class="catalog-title title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
@@ -81,11 +83,33 @@
           </li>
         </ul>
       </div>
-      <div class="catalog-background">
-        <div class="wrapper catalog-container">
+      <div class="catalog-header">
+        <div class="wrapper catalog-header-container">
+          <p class="filter-caption">Фильтр:</p>
+          <div class="sort">
+            <p class="sort-caption">Сортировка:</p>
+            <ul class="sort-list">
+              <li class="sort-item sort-item-current">
+                <a href="">По цене</a>
+              </li>
+              <li class="sort-item">
+                <a href="">По типу</a>
+              </li>
+              <li class="sort-item">
+                <a href="">По популярности</a>
+              </li>
+            </ul>
+            <div class="sort-buttons">
+              <button class="sort-button sort-button-up" type="button" aria-label="Назад"></button>
+              <button class="sort-button sort-button-down" type="button" aria-label="Вперед"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-content">
+        <div class="wrapper catalog-content-container">
           <section class="filter">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <p class="filter-caption">Фильтр:</p>
             <form class="filter-form" method="POST" action="https://echo.htmlacademy.ru/" target="_blank">
               <fieldset class="filter-fieldset filter-price">
                 <legend>Стоимость</legend>
@@ -144,24 +168,6 @@
           </section>
           <section class="products">
             <h2 class="visually-hidden">Список товаров</h2>
-            <div class="sort">
-              <p class="sort-caption">Сортировка:</p>
-              <ul class="sort-list">
-                <li class="sort-item sort-item-current">
-                  <a href="">По цене</a>
-                </li>
-                <li class="sort-item">
-                  <a href="">По типу</a>
-                </li>
-                <li class="sort-item">
-                  <a href="">По популярности</a>
-                </li>
-              </ul>
-              <div class="sort-buttons">
-                <button class="sort-button sort-button-up" type="button" aria-label="Назад"></button>
-                <button class="sort-button sort-button-down" type="button" aria-label="Вперед"></button>
-              </div>
-            </div>
             <ul class="product-list">
               <li class="product-item">
                 <img src="img/monopod-amateur.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -208,30 +214,34 @@
                 </p>
               </li>
             </ul>
-            <div class="pagination">
-              <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current">
-                  <a href="#">1</a>
-                </li>
-                <li class="pagination-item">
-                  <a href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                  <a href="#">3</a>
-                </li>
-              </ul>
-              <div class="pagination-toggles">
+            <ul class="pagination">
+              <li class="pagination-item">
                 <a class="pagination-toggle pagination-toggle-previous" href="#">Назад</a>
+              </li>
+              <li class="pagination-item">
+                <ul class="pages-list">
+                  <li class="pages-item pages-item-current">
+                    <a href="#">1</a>
+                  </li>
+                  <li class="pages-item">
+                    <a href="#">2</a>
+                  </li>
+                  <li class="pages-item">
+                    <a href="#">3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="pagination-item">
                 <a class="pagination-toggle pagination-toggle-next" href="#">Вперед</a>
-              </div>
-            </div>
+              </li>
+            </ul>
           </section>
         </div>
       </div>
     </main>
     <footer class="page-footer">
       <div class="wrapper">
-        <a class="page-footer-logo" href="index.html" aria-label="На главную">
+        <a class="page-footer-logo logo" href="index.html" aria-label="На главную">
           <img src="img/device-logo-yellow.svg" width="163" height="35" alt="Логотип Интернет-магазина &laquo;Device&raquo;">
         </a>
         <ul class="user-nav user-nav-footer">
