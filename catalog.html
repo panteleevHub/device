@@ -101,7 +101,7 @@
             </ul>
             <div class="sort-buttons">
               <button class="sort-button sort-button-up" type="button" aria-label="Назад"></button>
-              <button class="sort-button sort-button-down" type="button" aria-label="Вперед"></button>
+              <button class="sort-button sort-button-down sort-button-active" type="button" aria-label="Вперед"></button>
             </div>
           </div>
         </div>
@@ -155,11 +155,11 @@
                 <ul class="filter-bluetooth-list">
                   <li class="filter-bluetooth-item">
                     <input class="visually-hidden filter-bluetooth-input" type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
-                    <label for="bluetooth-yes">Есть</label>
+                    <label class="filter-bluetooth-label" for="bluetooth-yes">Есть</label>
                   </li>
                   <li class="filter-bluetooth-item">
                     <input class="visually-hidden filter-bluetooth-input" type="radio" name="bluetooth" value="no" id="bluetooth-no">
-                    <label for="bluetooth-no">Нет</label>
+                    <label class="filter-bluetooth-label" for="bluetooth-no">Нет</label>
                   </li>
                 </ul>
               </fieldset>
@@ -170,7 +170,9 @@
             <h2 class="visually-hidden">Список товаров</h2>
             <ul class="product-list">
               <li class="product-item">
-                <img src="img/monopod-amateur.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <p class="product-image">
+                  <img src="img/monopod-amateur.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                </p>
                 <p class="product-info">
                   <a class="product-name" href="#">Любительская селфи-палка</a>
                   <span class="product-price">1 100 руб.</span>
@@ -181,9 +183,11 @@
                 </p>
               </li>
               <li class="product-item">
-                <img src="img/monopod-pro.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <p class="product-image">
+                  <img src="img/monopod-pro.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                </p>
                 <p class="product-info">
-                  <a class="product-name" href="#">Профессиональная селфи-палка </a>
+                  <a class="product-name" href="#">Профессиональная<br>селфи-палка </a>
                   <span class="product-price">1 500 руб.</span>
                 </p>
                 <p class="product-buttons">
@@ -192,9 +196,11 @@
                 </p>
               </li>
               <li class="product-item">
-                <img src="img/monopod-unsinkable.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <p class="product-image">
+                  <img src="img/monopod-unsinkable.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                </p>
                 <p class="product-info">
-                  <a class="product-name" href="#">Непотопляемая селфи-палка</a>
+                  <a class="product-name" href="#">Непотопляемая<br>селфи-палка</a>
                   <span class="product-price">1 500 руб.</span>
                 </p>
                 <p class="product-buttons">
@@ -202,8 +208,10 @@
                   <a href="#" class="product-button product-button-comparison">Добавить к сравнению</a>
                 </p>
               </li>
-              <li class="product-item">
-                <img src="img/monopod-follow-me.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              <li class="product-item product-item-new">
+                <p class="product-image">
+                  <img src="img/monopod-follow-me.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                </p>
                 <p class="product-info">
                   <a class="product-name" href="#">Селфи-палка «Следуй за мной»</a>
                   <span class="product-price">1 900 руб.</span>
