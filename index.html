@@ -11,12 +11,12 @@
     <link rel="preload" href="fonts/opensans.woff" as="font">
     <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="preload" href="fonts/opensanslight.woff" as="font">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/180.png">
-    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
     <div class="wrapper">
@@ -148,9 +148,9 @@
               </li>
             </ul>
             <div class="promo-slider-toggles">
-              <button class="promo-slider-toggle promo-slider-toggle-active" type="button" aria-label="Первый слайд"></button>
-              <button class="promo-slider-toggle" type="button" aria-label="Второй слайд"></button>
-              <button class="promo-slider-toggle" type="button" aria-label="Третий слайд"></button>
+              <button class="promo-slider-toggle promo-slider-toggle-active" type="button" id="promo-slide-first" aria-label="Первый слайд"></button>
+              <button class="promo-slider-toggle" type="button" id="promo-slide-second" aria-label="Второй слайд"></button>
+              <button class="promo-slider-toggle" type="button" id="promo-slide-third" aria-label="Третий слайд"></button>
             </div>
           </div>
         </section>
@@ -248,9 +248,9 @@
           <h2 class="visually-hidden">Услуги</h2>
           <div class="services-slider">
             <div class="services-toggles">
-              <button class="services-toggle services-toggle-active button" type="button">Доставка</button>
-              <button class="services-toggle button" type="button">Гарантия</button>
-              <button class="services-toggle button" type="button">Кредит</button>
+              <button class="services-toggle services-toggle-active button" type="button" id="services-slide-first">Доставка</button>
+              <button class="services-toggle button" type="button" id="services-slide-second">Гарантия</button>
+              <button class="services-toggle button" type="button" id="services-slide-third">Кредит</button>
             </div>
             <ul class="services-slides">
               <li class="services-slide services-slide-first services-slide-current">
@@ -406,5 +406,7 @@
         <button class="feedback-submit button" type="submit">Отправить</button>
       </form>
     </section>
+    <script src="js/slider.min.js"></script>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>
